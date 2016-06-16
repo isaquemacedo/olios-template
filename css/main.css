@@ -1,7 +1,9 @@
 .container-menu-fixed {
-  float: left;
+  position: fixed;
+  left: 0;
   width: 100px;
   height: 100%;
+  z-index: 2;
   box-shadow: 11px 0px 15px 2px #ededed;
 }
 .logo {
@@ -18,6 +20,7 @@
   width: 36px;
   height: 32px;
   display: block;
+  -webkit-transition: 0.3s ease;
 }
 .items img {
   display: block;
@@ -28,16 +31,53 @@
   margin-right: auto;
   margin-bottom: 50px;
 }
+.item-center:hover {
+  -webkit-transform: rotate(20deg);
+     -moz-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
 .item-bottom {
   position: fixed;
   left: 30px;
   bottom: 50px;
 }
+.item-bottom:hover {
+  -webkit-animation: in 0.3s linear infinite alternate;
+     -moz-animation: in 0.3s linear infinite alternate;
+          animation: in 0.3s linear infinite alternate;
+  -webkit-transition-duration: infinite;
+     -moz-transition-duration: infinite;
+          transition-duration: infinite;
+}
+@-webkit-keyframes in {
+  to {
+    bottom: 60px;
+  }
+  from {
+    bottom: 50px;
+  }
+}
+@-moz-keyframes in {
+  to {
+    bottom: 60px;
+  }
+  from {
+    bottom: 50px;
+  }
+}
+@keyframes in {
+  to {
+    bottom: 60px;
+  }
+  from {
+    bottom: 50px;
+  }
+}
 @media (max-width: 768px) {
   .container-menu-fixed {
-    float: left;
     width: 100%;
     height: 100px;
+    bottom: 0;
   }
   .logo {
     float: left;
