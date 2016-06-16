@@ -1,0 +1,21 @@
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+body {
+  color: #111;
+  font-family: 'NewJuneRegular';
+  font-size: 1em;
+  line-height: 1.4;
+  background-color: lightblue;
+  background-image: url('../img/pixel.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ir {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}

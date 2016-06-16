@@ -1,0 +1,8 @@
+<!--#include file="inc/head.shtm" -->
+    <!--#include file="inc/header.shtm" -->
+    <section>
+      <h1>One Boilerplate</h1>
+      <p>Hello world! This is One Boilerplate.</p>
+    </section>
+    <!--#include file="inc/footer.shtm" -->
+<!--#include file="inc/foot.shtm" -->

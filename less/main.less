@@ -1,0 +1,24 @@
+@import (reference) 'variables.less';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #111;
+  font-family: 'NewJuneRegular';
+  font-size: 1em;
+  line-height: 1.4;
+  background-color: @bg-color;
+  background-image: url('../img/pixel.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ir {
+  text-indent: 100%; // -999999px?
+  white-space: nowrap;
+  overflow: hidden;
+}
