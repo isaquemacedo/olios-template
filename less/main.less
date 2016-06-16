@@ -1,20 +1,12 @@
 @import (reference) 'variables.less';
+@import 'menu-fixed.less';
+@import 'media.less';
 
 *,
 *:before,
 *:after {
   box-sizing: border-box;
-}
-
-body {
-  color: #111;
-  font-family: 'NewJuneRegular';
-  font-size: 1em;
-  line-height: 1.4;
-  background-color: @bg-color;
-  background-image: url('../img/pixel.png');
-  background-position: center;
-  background-repeat: no-repeat;
+  text-decoration: none;
 }
 
 .ir {
@@ -22,3 +14,5 @@ body {
   white-space: nowrap;
   overflow: hidden;
 }
+
+html, body { margin:0; height: 100%;}
