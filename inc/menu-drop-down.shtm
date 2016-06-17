@@ -1,0 +1,31 @@
+<a class="btn-menu-drop" href="javascript:void(0);">
+  Logo
+  <img class="align-image-links" src="../img/hamburguer.png" height="15" width="18">
+</a>
+
+<div id="container-menu-drop-down">
+  <nav class="items-navigation-drop">
+    <a class="items-menu-drop" href="javascript:void(0);">
+      LIVING ROOM
+      <img class="align-image-links" src="../img/living-room.png">
+    </a>
+    <a class="items-menu-drop" href="javascript:void(0);">
+      OFFICE
+      <img class="align-image-links" src="../img/oficce.png" height="45" width="53">
+    </a>
+    <a class="items-menu-drop" href="javascript:void(0);">
+      FOR KIDS
+      <img class="align-image-links" src="../img/for-kids.png" height="46" width="58">
+    </a>
+    <a class="items-menu-drop" href="javascript:void(0);">
+      KITCHEN
+      <img class="align-image-links" src="../img/kitchen.png" height="43" width="56">
+    </a>
+    <a class="items-menu-drop" href="javascript:void(0);">
+      ACCESORIES
+      <img class="align-image-links" src="../img/acessories.png">
+    </a>
+  </nav>
+
+  <a class="align-bottom" href="javascript:void(0);">SHOW ALL CATEGORIES</a>
+</div>

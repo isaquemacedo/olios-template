@@ -1,15 +1,10 @@
-$(function() {
-  console.log('->', 'app');
+$(".btn-menu-drop").click(function() {
+  console.log("OK");
+  $("#container-menu-drop-down").toggle( "slow", function() { } );
 });
 
-$(function() {
-  console.log('->', 'carousel');
-});
-
-$(function() {
-  console.log('->', 'tab');
-});
-
-$(function() {
-  console.log('->', 'validation');
+$("#wrapper").click(function () {
+  $("#container-menu-drop-down").hide("slow", function() {
+    $(this).css("display", "none");
+  });
 });

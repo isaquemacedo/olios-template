@@ -1,5 +1,6 @@
 @import (reference) 'variables.less';
 @import 'menu-fixed.less';
+@import 'menu-drop-down.less';
 @import 'media.less';
 
 *,
@@ -10,9 +11,25 @@
 }
 
 .ir {
-  text-indent: 100%; // -999999px?
+  text-indent: -999999px; // 100%?
   white-space: nowrap;
-  overflow: hidden;
 }
 
-html, body { margin:0; height: 100%;}
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.align-image-links {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+// #wrapper{
+//   margin: 0 auto;
+//   width: 980px;
+//   height: 100%;
+// }

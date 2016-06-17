@@ -1,4 +1,4 @@
-.container-menu-fixed {
+#container-menu-fixed {
   position: fixed;
   left: 0;
   width: 100px;
@@ -15,50 +15,47 @@
   margin-right: auto;
   display: block;
   width: 42px;
+  .ir;
 }
 
-.items-navigation{
+.items-navigation {
   margin-top: 150px;
 }
 
-.items{
+.items {
   width: 36px;
   height: 32px;
   display: block;
   -webkit-transition: 0.3s ease;
-
-  img{
-    display: block;
-    margin: 0 auto;
-  }
+  .ir;
 }
 
-.item-center{
+.item-center {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
 
-  &:hover{
+  &:hover {
     transform: rotate(20deg);
   }
 }
 
-.item-bottom{
+.item-bottom {
   position: fixed;
   left: 30px;
   bottom: 50px;
 
-  &:hover{
+  &:hover {
     animation: in 0.3s linear infinite alternate;
     transition-duration: infinite;
   }
 }
 
 @keyframes in {
-  to{
+  to {
     bottom: 60px;
   }
-  from{
+  from {
     bottom: 50px;
   }
 }
