@@ -1,5 +1,14 @@
 <!--#include file="inc/head.shtm" -->
   <!--#include file="inc/menu-fixed.shtm" -->
-  <div id="wrapper"></div>
+  <div id="wrapper">
+    <div class="align">
+      <ul class="container-slider">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
   <!--#include file="inc/menu-drop-down.shtm" -->
 <!--#include file="inc/foot.shtm" -->
