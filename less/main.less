@@ -2,6 +2,7 @@
 @import 'menu-fixed.less';
 @import 'menu-drop-down.less';
 @import 'media.less';
+@import 'color.less';
 
 *,
 *:before,
@@ -26,11 +27,11 @@ ul, li{
 }
 
 .align-image-links {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
+  display: block;
 }
 
 #wrapper{
@@ -45,7 +46,49 @@ ul, li{
   margin-left: 100px;
   width: 85%;
   height: 100%;
-  padding: 10px;
+  overflow: hidden;
+  padding: 25px;
 }
 
-.container-slider{}
+.container-slider {
+  position: relative;
+  left: 0;
+  min-width: 1700px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.slider-itens {
+  width: 1700px;
+  height: 100%;
+  float: left;
+  z-index: 1;
+}
+
+.container-pins{
+  position: fixed;
+  right: 80px;
+  bottom: 100px;
+  width: 360px;
+  height: 10px;
+}
+
+.slider-pin{
+  margin-right: 25px;
+  margin-left: 25px;
+  float: left;
+  width: 15px;
+  height: 15px;
+  display: block;
+  border: 2px solid #d9d9da;
+  border-radius: 50%;
+
+  &:hover{
+    background-color: #0023ff;
+  }
+}
+
+.slider-pin{
+  .ir;
+}

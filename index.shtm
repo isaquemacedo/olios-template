@@ -3,10 +3,33 @@
   <div id="wrapper">
     <div class="align">
       <ul class="container-slider">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li class="slider-itens" value="1">
+          <h1>OLIOS</h1>
+          <h2>NEWEST FURNITURE SHOP TEMPLATE</h2>
+          <a href="javascript:void(0);">VIEW MORE</a>
+        </li>
+        <li class="slider-itens" value="2">
+          <h1>TESTE</h1>
+          <h2>LOREM IPSUM DOLOR SIT AMET</h2>
+          <a href="javascript:void(0);">VIEW MORE</a>
+        </li>
+        <li class="slider-itens" value="3">
+          <h1></h1>
+          <h2></h2>
+          <a href="javascript:void(0);"></a>
+        </li>
+        <li class="slider-itens" value="4">
+          <h1></h1>
+          <h2></h2>
+          <a href="javascript:void(0);" ></a>
+        </li>
+
+        <div class="container-pins">
+          <a class="slider-pin" href="javascript:void(0);">0</a>
+          <a class="slider-pin" href="javascript:void(0);">1</a>
+          <a class="slider-pin" href="javascript:void(0);">2</a>
+          <a class="slider-pin" href="javascript:void(0);">3</a>
+        </div>
       </ul>
     </div>
   </div>
