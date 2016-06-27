@@ -3,6 +3,7 @@
 @import 'menu-drop-down.less';
 @import 'media.less';
 @import 'color.less';
+@import 'mixins.less';
 
 *,
 *:before,
@@ -64,6 +65,42 @@ ul, li{
   height: 100%;
   float: left;
   z-index: 1;
+  background-image: url(../img/bg-slide.png);
+  background-repeat: no-repeat;
+  background-position: center 100px;
+}
+
+.slide-title{
+  .font-size(200);
+  margin-top: 50px;
+}
+
+.slide-title,
+.slide-subtitle{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  width: 620px;
+  text-align: center;
+}
+
+.btn-slide{
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  line-height: 50px;
+  background-color: blue;
+  text-align: center;
+  color: white;
+  -webkit-transition: 0.3s ease;
+
+  &:hover{
+    margin-top: 20px;
+  }
 }
 
 .container-pins{
@@ -71,7 +108,7 @@ ul, li{
   right: 80px;
   bottom: 100px;
   width: 360px;
-  height: 10px;
+  height: 16px;
 }
 
 .slider-pin{
@@ -85,8 +122,12 @@ ul, li{
   border-radius: 50%;
 
   &:hover{
-    background-color: #0023ff;
+    .slider-pin-hover;
   }
+}
+
+.slider-pin-hover{
+  background-color: #0023ff;
 }
 
 .slider-pin{

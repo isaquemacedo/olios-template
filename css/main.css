@@ -99,7 +99,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  display: block;
+  display: none;
   width: 250px;
   height: 100%;
   background-color: white;
@@ -132,7 +132,25 @@
   bottom: 20px;
   right: 25px;
 }
+@media (max-width: 1200px) {
+  #wrapper .align {
+    margin: 0 auto;
+  }
+  .slider-itens .slide-title,
+  .slider-itens .slide-subtitle {
+    margin-left: 0;
+  }
+  .slider-itens .slide-title {
+    font-size: 10em;
+  }
+  .slider-itens .btn-slide {
+    margin-left: 80px;
+  }
+}
 @media (max-width: 768px), (max-height: 550px) {
+  body {
+    font-size: 70%;
+  }
   #container-menu-drop-down {
     top: 0;
     width: 100%;
@@ -187,10 +205,23 @@
     right: 40px;
     margin-top: 30px;
   }
+  .container-slider .btn-slide {
+    margin-left: 150px;
+  }
+  .container-slider .container-pins {
+    bottom: 155px;
+  }
 }
 @media (max-width: 570px) {
   .items-navigation {
     margin-left: 0;
+  }
+  .slider-itens .slide-title,
+  .slider-itens .slide-subtitle {
+    width: 350px;
+  }
+  .slider-itens .btn-slide {
+    margin-left: 15px;
   }
 }
 @media (max-width: 430px) {
@@ -202,11 +233,16 @@
   .item-center {
     margin-left: 15px;
   }
+  .slider-itens .slide-title {
+    width: 260px;
+    font-size: 6.875em;
+  }
+  .slider-itens .slide-subtitle {
+    width: 265px;
+    font-size: 1.25em;
+  }
 }
 @media (max-height: 550px) {
-  body {
-    font-size: 70%;
-  }
   .items-menu-drop {
     margin-bottom: 10px;
     height: 20px;
@@ -296,13 +332,45 @@ li {
   height: 100%;
   float: left;
   z-index: 1;
+  background-image: url(../img/bg-slide.png);
+  background-repeat: no-repeat;
+  background-position: center 100px;
+}
+.slide-title {
+  font-size: 12.5em;
+  margin-top: 50px;
+}
+.slide-title,
+.slide-subtitle {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  width: 620px;
+  text-align: center;
+}
+.btn-slide {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  line-height: 50px;
+  background-color: blue;
+  text-align: center;
+  color: white;
+  -webkit-transition: 0.3s ease;
+}
+.btn-slide:hover {
+  margin-top: 20px;
 }
 .container-pins {
   position: fixed;
   right: 80px;
   bottom: 100px;
   width: 360px;
-  height: 10px;
+  height: 16px;
 }
 .slider-pin {
   margin-right: 25px;
@@ -315,6 +383,9 @@ li {
   border-radius: 50%;
 }
 .slider-pin:hover {
+  background-color: #0023ff;
+}
+.slider-pin-hover {
   background-color: #0023ff;
 }
 .slider-pin {

@@ -4,24 +4,24 @@
     <div class="align">
       <ul class="container-slider">
         <li class="slider-itens" value="1">
-          <h1>OLIOS</h1>
-          <h2>NEWEST FURNITURE SHOP TEMPLATE</h2>
-          <a href="javascript:void(0);">VIEW MORE</a>
+          <h1 class="slide-title">OLIOS</h1>
+          <h2 class="slide-subtitle">NEWEST FURNITURE SHOP TEMPLATE</h2>
+          <a class="btn-slide" href="javascript:void(0);">VIEW MORE</a>
         </li>
         <li class="slider-itens" value="2">
-          <h1>TESTE</h1>
-          <h2>LOREM IPSUM DOLOR SIT AMET</h2>
-          <a href="javascript:void(0);">VIEW MORE</a>
+          <h1 class="slide-title">TESTE</h1>
+          <h2 class="slide-subtitle">LOREM IPSUM DOLOR SIT AMET</h2>
+          <a class="btn-slide" href="javascript:void(0);">VIEW MORE</a>
         </li>
         <li class="slider-itens" value="3">
-          <h1></h1>
-          <h2></h2>
-          <a href="javascript:void(0);"></a>
+          <h1 class="slide-title">SLIDE3</h1>
+          <h2 class="slide-subtitle">SUB TITULO DO SLIDE</h2>
+          <a class="btn-slide" href="javascript:void(0);">VIEW MORE</a>
         </li>
         <li class="slider-itens" value="4">
-          <h1></h1>
-          <h2></h2>
-          <a href="javascript:void(0);" ></a>
+          <h1 class="slide-title">SLIDE4</h1>
+          <h2 class="slide-subtitle">LOREM IPSUM DOLOR SIT AMET</h2>
+          <a class="btn-slide" href="javascript:void(0);" >VIEW MORE</a>
         </li>
 
         <div class="container-pins">
