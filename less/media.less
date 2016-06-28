@@ -1,22 +1,23 @@
-@media (max-width: 1200px) {
+@media (max-width: 1240px) {
   #wrapper {
     .align{
-      margin: 0 auto;
+      width: 980px;
+    }
+
+    .content-slide{
+      width: 980px;
     }
   }
+}
 
-  .slider-itens{
-    .slide-title,
-    .slide-subtitle {
-      margin-left: 0;
+@media (max-width: 980px) {
+  #wrapper {
+    .align{
+      width: 768px;
     }
 
-    .slide-title{
-      .font-size(160);
-    }
-
-    .btn-slide{
-      margin-left: 80px;
+    .content-slide{
+      width: 768px;
     }
   }
 }
@@ -24,6 +25,16 @@
 @media (max-width: 768px), (max-height: 550px) {
   body{
     font-size: 70%;
+  }
+
+  #wrapper {
+    .align{
+      width: 568px;
+    }
+
+    .content-slide{
+      width: 568px;
+    }
   }
 
   #container-menu-drop-down  {
@@ -89,52 +100,66 @@
     right: 40px;
     margin-top: 30px;
   }
-
-  .container-slider {
-    .btn-slide {
-      margin-left: 150px;
-    }
-
-    .container-pins {
-      bottom: 155px;
-    }
-  }
 }
 
 @media (max-width: 570px) {
-  .items-navigation { margin-left: 0;}
+  body{
+    font-size: 60%;
+  }
 
-  .slider-itens{
-    .slide-title,
-    .slide-subtitle{
-      width: 350px;
+  #wrapper {
+    .align{
+      width: 430px;
     }
 
-    .btn-slide{
-      margin-left: 15px;
+    .slider-itens{
+      height: 380px;
+    }
+
+    .content-slide{
+      width: 430px;
     }
   }
+
+  .items-navigation { margin-left: 0;}
 }
 
 @media (max-width: 430px) {
+  body{
+    font-size: 60%;
+  }
+
+  #wrapper {
+    .align{
+      width: 100%;
+      padding: 0;
+    }
+
+    .content-slide{
+      width: 375px;
+      margin: 0 auto;
+    }
+  }
+
   .item-center{ margin-left: 30px;}
 }
 
+
 @media (max-width: 340px) {
-  .item-center{ margin-left: 15px;}
+  body{
+    font-size: 50%;
+  }
 
-  .slider-itens{
-    .slide-title{
-      width: 260px;
-      .font-size(110);
-    }
-
-    .slide-subtitle{
-      width: 265px;
-      .font-size(20);
+  #wrapper {
+    .content-slide{
+      width: 320px;
+      margin: 0 auto;
     }
   }
+
+  .item-center{ margin-left: 15px;}
 }
+
 
 @media(max-height: 550px) {
   .items-menu-drop{

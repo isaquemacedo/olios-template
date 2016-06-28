@@ -21,7 +21,7 @@ containerWidth = 0;
 function setWidthCarrousel() {
   amount_item = $(".slider-itens").length;
   itemWidth = $(".slider-itens").width();
-  $(".container-slider").width(itemWidth * amount_item);
+  $(".container-slider").width(itemWidth * (amount_item + 40));
 }
 
 //Função que retorna o indice do pin
