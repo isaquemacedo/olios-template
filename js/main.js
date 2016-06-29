@@ -61,7 +61,11 @@ $(function() {
   $('.carrousel').slick({
     arrows: false,
     dots: true,
-    dotsClass: 'myDots'
+    dotsClass: 'myDots',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000
   });
 
 });
