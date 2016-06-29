@@ -132,31 +132,9 @@
   bottom: 20px;
   right: 25px;
 }
-@media (max-width: 1240px) {
-  #wrapper .align {
-    width: 980px;
-  }
-  #wrapper .content-slide {
-    width: 980px;
-  }
-}
-@media (max-width: 980px) {
-  #wrapper .align {
-    width: 768px;
-  }
-  #wrapper .content-slide {
-    width: 768px;
-  }
-}
 @media (max-width: 768px), (max-height: 550px) {
   body {
     font-size: 70%;
-  }
-  #wrapper .align {
-    width: 568px;
-  }
-  #wrapper .content-slide {
-    width: 568px;
   }
   #container-menu-drop-down {
     top: 0;
@@ -212,19 +190,13 @@
     right: 40px;
     margin-top: 30px;
   }
+  .carrousel .myDots {
+    bottom: 150px;
+  }
 }
 @media (max-width: 570px) {
   body {
     font-size: 60%;
-  }
-  #wrapper .align {
-    width: 430px;
-  }
-  #wrapper .slider-itens {
-    height: 380px;
-  }
-  #wrapper .content-slide {
-    width: 430px;
   }
   .items-navigation {
     margin-left: 0;
@@ -234,28 +206,26 @@
   body {
     font-size: 60%;
   }
-  #wrapper .align {
-    width: 100%;
-    padding: 0;
-  }
-  #wrapper .content-slide {
-    width: 375px;
-    margin: 0 auto;
-  }
   .item-center {
     margin-left: 30px;
+  }
+  .carrousel .myDots {
+    right: 65px;
+  }
+  .carrousel .myDots li {
+    margin-right: 28px;
+    margin-left: 28px;
   }
 }
 @media (max-width: 340px) {
   body {
     font-size: 50%;
   }
-  #wrapper .content-slide {
-    width: 320px;
-    margin: 0 auto;
-  }
   .item-center {
     margin-left: 15px;
+  }
+  .carrousel .myDots {
+    right: 35px;
   }
 }
 @media (max-height: 550px) {
@@ -334,21 +304,22 @@ li {
   overflow: hidden;
   padding: 20px;
 }
-.container-slider {
-  position: relative;
-  left: 0;
-  min-width: 1700px;
+.carrousel {
+  width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0 !important;
+}
+.content {
+  margin: 0 auto;
+  text-align: center;
 }
 .slider-itens {
   height: 420px;
   float: left;
   z-index: 1;
-  background-image: url(../img/bg-slide.png);
-  background-repeat: no-repeat;
-  background-position: center 100px;
 }
 .content-slide {
   width: 1200px;
@@ -382,30 +353,47 @@ li {
 .btn-slide:hover {
   margin-top: 20px;
 }
-.container-pins {
-  position: fixed;
-  right: 80px;
-  bottom: 100px;
-  width: 360px;
-  height: 16px;
+.myDots {
+  position: absolute;
+  bottom: 70px;
+  right: 50px;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
 }
-.slider-pin {
-  margin-right: 25px;
-  margin-left: 25px;
-  float: left;
+.myDots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  content: '';
   width: 15px;
   height: 15px;
-  display: block;
-  border: 2px solid #d9d9da;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.myDots li.slick-active {
+  background-color: #0023ff;
+  border-color: #0023ff;
+}
+.myDots li {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #d8d8d9;
   border-radius: 50%;
+  margin-right: 40px;
+  margin-left: 40px;
+  padding: 0;
+  cursor: pointer;
 }
-.slider-pin:hover {
+.myDots li:hover {
   background-color: #0023ff;
-}
-.slider-pin-hover {
-  background-color: #0023ff;
-}
-.slider-pin {
-  text-indent: -999999px;
-  white-space: nowrap;
+  border-color: #0023ff;
 }

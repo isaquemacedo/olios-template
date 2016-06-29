@@ -56,4 +56,12 @@ $(function() {
   menuDrop(".btn-menu-drop");
   setWidthCarrousel();
   slider_value();
+
+  /*Slicker Settings*/
+  $('.carrousel').slick({
+    arrows: false,
+    dots: true,
+    dotsClass: 'myDots'
+  });
+
 });

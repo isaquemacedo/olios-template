@@ -1,44 +1,27 @@
  <!--#include file="inc/head.shtm" -->
   <!--#include file="inc/menu-fixed.shtm" -->
   <div id="wrapper">
-    <div class="align">
-      <ul class="container-slider">
-        <li class="slider-itens" value="1">
-          <div class="content-slide">
-            <h1 class="slide-title">OLIOS</h1>
-            <h2 class="slide-subtitle">NEWEST FURNITURE SHOP TEMPLATE</h2>
-            <a class="btn-slide" href="javascript:void(0);">VIEW MORE</a>
-          </div>
-        </li>
-        <li class="slider-itens" value="2">
-          <div class="content-slide">
-            <h1 class="slide-title">TESTE</h1>
-            <h2 class="slide-subtitle">LOREM IPSUM DOLOR SIT AMET</h2>
-            <a class="btn-slide" href="javascript:void(0);">VIEW MORE</a>
-          </div>
-        </li>
-        <li class="slider-itens" value="3">
-          <div class="content-slide">
-            <h1 class="slide-title">SLIDE3</h1>
-            <h2 class="slide-subtitle">SUB TITULO DO SLIDE</h2>
-            <a class="btn-slide" href="javascript:void(0);">VIEW MORE</a>
-          </div>
-        </li>
-        <li class="slider-itens" value="4">
-          <div class="content-slide">
-            <h1 class="slide-title">SLIDE4</h1>
-            <h2 class="slide-subtitle">LOREM IPSUM DOLOR SIT AMET</h2>
-            <a class="btn-slide" href="javascript:void(0);" >VIEW MORE</a>
-          </div>
-        </li>
-
-        <div class="container-pins">
-          <a class="slider-pin" href="javascript:void(0);">0</a>
-          <a class="slider-pin" href="javascript:void(0);">1</a>
-          <a class="slider-pin" href="javascript:void(0);">2</a>
-          <a class="slider-pin" href="javascript:void(0);">3</a>
-        </div>
-      </ul>
+    <div class="carrousel">
+      <div class="content">
+        <h1 class="slide-title">titulo</h1>
+        <h2 class="slide-subtitle">sub-titulo</h2>
+        <a class="btn-slide" href="javascript: void(0);">view more</a>
+      </div>
+      <div class="content">
+        <h1 class="slide-title">titulo</h1>
+        <h2 class="slide-subtitle">sub-titulo</h2>
+        <a class="btn-slide" href="javascript: void(0);">view more</a>
+      </div>
+      <div class="content">
+        <h1 class="slide-title">titulo</h1>
+        <h2 class="slide-subtitle">sub-titulo</h2>
+        <a class="btn-slide" href="javascript: void(0);">view more</a>
+      </div>
+      <div class="content">
+        <h1 class="slide-title">titulo</h1>
+        <h2 class="slide-subtitle">sub-titulo</h2>
+        <a class="btn-slide" href="javascript: void(0);">view more</a>
+      </div>
     </div>
   </div>
   <!--#include file="inc/menu-drop-down.shtm" -->
